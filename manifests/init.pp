@@ -122,11 +122,11 @@ class minio (
   String $service_mode,
   ) {
 
-  class { '::minio::user': }
-  class { '::minio::install': }
+  class { 'minio::user': }
+  class { 'minio::install': }
 
-  class { '::minio::config': }
-  class { '::minio::service': }
+  class { 'minio::config': }
+  class { 'minio::service': }
 
   anchor { 'minio::begin': }
   anchor { 'minio::end': }
