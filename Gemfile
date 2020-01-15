@@ -30,8 +30,9 @@ end
 group :system_tests do
   gem 'beaker-puppet_install_helper',                                   require: false
   gem 'beaker-rspec',                                                   require: false
+  gem 'beaker-vagrant',                                                 require: false
   gem 'serverspec',                                                     require: false
 end
 
 gem 'facter', '~> 2.4', require: false, groups: [:test]
-gem 'puppet', '~> 4.0', require: false, groups: [:test]
+gem 'puppet', '~> 5.0', require: false, groups: [:test]
