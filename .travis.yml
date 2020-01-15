@@ -44,6 +44,7 @@ matrix:
 branches:
   only:
   - master
+  - feature_fix_ci
   - "/^v\\d/"
 notifications:
   email: false
